@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main(void){
+	clrscr();
+	int i,num,max,rep;
+	printf("Aparecera el numero mayor y las veces que se repite\n\n");
+	printf("Introduce 10 numeros.\n ");
+	scanf("%d ",&num);
+	max=num;
+	rep=1;
+	  for(i=1;i<10;i++)
+	    {
+	    scanf("%d",&num);
+	        if(num>max)
+	           {
+	           	max=num;
+	           	rep=1;
+	           	}
+	        else if(num==max){
+	            rep=rep+1;
+	        }
+	    }
+	printf("El mayor es %d y se repite %d veces",max,rep);
+	getch();
+}
+	
